@@ -8,7 +8,7 @@ The following will take you through the steps required to install Home Assistant
 1. Download the appropriate install option:
 
    - As an image for your device:
-
+      Please note these are not images for creating the installation media from which to install Home Assistant. These are the images to run the sytem itself directly.
      - [Raspberry Pi 3 Model B and B+ 32-bit][pi3-32] (32-bit is required for GPIO support)
      - [Raspberry Pi 3 Model B and B+ 64-bit][pi3-64]
      - [Raspberry Pi 4 Model B (1 GB, 2 GB and 4 GB model) 32-bit][pi4-32] (32-bit is required for GPIO support)
@@ -24,7 +24,7 @@ The following will take you through the steps required to install Home Assistant
 
 2. Install Home Assistant OS:
 
-   - **For the device images:** Flash the downloaded image to an SD card using [balenaEtcher][balenaEtcher]. If using a Pi, we recommend at least a 32 GB SD card to avoid running out of space.
+   - **For the device images:** Flash the downloaded image to an SD card using [balenaEtcher][balenaEtcher]. If using a Pi, we recommend at least a 32 GB SD card to avoid running out of space. If using NUC you need to flash the image directly to your system disk - will need external enclosure to connec your system disk to another computer or use linux PC or live distro to DD the image to your system disk [https://community.home-assistant.io/t/my-steps-to-success-for-hass-io-on-intel-nuc/43915/127].  
    - **For the virtual appliance images:** Load the appliance image into your virtual machine software. (Note: You are free to assign as much resources as you wish to the VM, please assign enough based on your add-on needs)
      - For VirtualBox create a new virtual machine, select "Other Linux (64Bit), assign it at least 2 GB of memory and "Use an existing virtual hard disk file", select the VDI file from above, afterwards edit the "Settings" of the VM and go "System" then Motherboard and Enable EFI, then "Network" "Adapter 1" Bridged and your adapter.
      - For Hyper-V create a new virtual machine, select "Generation 2", assign it at least 2 GB of memory and select "Connection -> "Your Virtual Switch that is bridged", then "Use an existing virtual hard disk" and select the VHDX file from above, after creation go to "Settings" -> "Security" and deselect "Enable Secure Boot".
